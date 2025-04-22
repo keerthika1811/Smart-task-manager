@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📋 Task List</h1>
+        <p>View and manage your tasks based on priority.</p>
+
+        <!-- Task Filters -->
+        <div class="task-filters">
+            <button onclick="filterTasks('all')">📋 All</button>
+            <button onclick="filterTasks('high')">🔥 High</button>
+            <button onclick="filterTasks('medium')">⚡ Medium</button>
+            <button onclick="filterTasks('low')">✅ Low</button>
+        </div>
+
+        <!-- Task List -->
+        <ul id="task-list"></ul>
+
+        <!-- Back Button -->
+        <button class="back-btn" onclick="goBack()">⬅️ Back</button>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
